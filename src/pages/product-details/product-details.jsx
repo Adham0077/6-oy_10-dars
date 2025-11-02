@@ -8,7 +8,6 @@ export const ProductDetails = () => {
     const book = products.find((b) => b.id === Number(id));
     return (
         <>
-            <div>
                 <section>
                     <div className='container'>
                         <ul className='flex gap-1 mb-8'>
@@ -22,8 +21,8 @@ export const ProductDetails = () => {
                     </div>
                 </section>
                 <section className="container">
-                    <div className="flex gap-6">
-                        <div className='w-[350px] h-[472px]'>
+                    <div className="flex gap-6 mb-16">
+                        <div className='w-[350px]'>
                             <img src={book.img} alt="img" />
                         </div>
                         <div>
@@ -81,8 +80,42 @@ export const ProductDetails = () => {
                             </ul>
                         </div>
                     </div>
+                    <div>
+                        <ul className='flex gap-[38px] mb-4'>
+                            <li className='text-[32px] font-bold '>Маълумотлар</li>
+                            <li className='text-[32px] font-bold text-gray-400'>Фикрлар</li>
+                        </ul>
+
+                        <ul className='flex gap-[143px] w-[912px] border border-gray-400 py-5 pl-6'>
+                            <li className='text-[16px] font-bold w-[146px]'>Китоб номи</li>
+                            <li className='text-[16px] font-normal'>Элжернга аталган гуллар</li>
+                        </ul>
+                        <ul className='flex gap-[143px] w-[912px] border border-gray-400 py-5 pl-6'>
+                            <li className='text-[16px] font-bold w-[146px]'>Муаллиф</li>
+                            <li className='text-[16px] font-normal'>Даниел КИЗ</li>
+                        </ul>
+                        <ul className='flex gap-[143px] w-[912px] border border-gray-400 py-5 pl-6'>
+                            <li className='text-[16px] font-bold w-[146px]'>ISBN</li>
+                            <li className='text-[16px] font-normal'>121341381648 (ISBN13: 121341381648)</li>
+                        </ul>
+                        <ul className='flex gap-[143px] w-[912px] border border-gray-400 py-5 pl-6'>
+                            <li className='text-[16px] font-bold w-[146px]'>Тил</li>
+                            <li className='text-[16px] font-normal'>Ўзбек</li>
+                        </ul>
+                        <ul className='flex gap-[143px] w-[912px] border border-gray-400 py-5 pl-6'>
+                            <li className='text-[16px] font-bold w-[146px]'>Сахифалар</li>
+                            <li className='text-[16px] font-normal'>450</li>
+                        </ul>
+                        <ul className='flex gap-[143px] w-[912px] border border-gray-400 py-5 pl-6'>
+                            <li className='text-[16px] font-bold w-[146px]'>Чоп этилган сана</li>
+                            <li className='text-[16px] font-normal'>Апрель 7, 1999</li>
+                        </ul>
+                        <ul className='flex gap-[143px] w-[912px] border border-gray-400 py-5 pl-6 mb-10'>
+                            <li className='text-[16px] font-bold w-[146px]'>Нашриёт</li>
+                            <li className='text-[16px] font-normal'>Wepress Inc.</li>
+                        </ul>
+                    </div>
                 </section>
-            </div>
         </>
     )
 }
